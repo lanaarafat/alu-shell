@@ -4,7 +4,7 @@
 a=1
 while [ "$a" -lt 21 ]; do
   # if the value is 4:bad luck
-   case "$i" in
+   case "$a" in
      4) echo "$a"
            echo "bad luck from China"
             ;;
