@@ -1,0 +1,18 @@
+#!/usr/bin/env bash
+#displays good luck for the 4th iteration
+#displays bad luck for the 8th iteration
+#displays good luck for the other iterations
+#using while,if,elif and else.
+
+a=1
+while [ "$a" -lt 11 ]; do
+  # if the value is 4:bad luck
+   if [ "$a" -eq 4 ]; then
+   echo "bad luck"
+   elif [ "$a" -eq 8 ]; then
+   echo "good luck"
+    else 
+    echo "Best School"
+     fi 
+  ((a++))
+ done

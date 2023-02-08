@@ -1,0 +1,16 @@
+#!/usr/bin/env bash
+#script that displays numbers from 1 to 100
+
+a=1
+while [ "$a" -le 100 ]; do
+  if ! (( a % 3 )) && ! (( a % 5 )); then
+    echo "FizzBuzz"
+  elif ! (( a % 3 )); then
+    echo "Fizz"
+  elif ! (( a % 5 )); then
+    echo "Buzz"
+  else
+    echo "$a"
+  fi
+  ((a++))
+done

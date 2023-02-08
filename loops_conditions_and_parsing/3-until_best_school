@@ -1,0 +1,12 @@
+#!/usr/bin/env bash
+#script that displays best school 10 times using until
+a=0
+ until false; do
+  echo "Best School" 
+  ((a++))
+  if [[ $a -lt 10 ]]; then
+  continue 
+   else
+      break
+      fi
+    done
